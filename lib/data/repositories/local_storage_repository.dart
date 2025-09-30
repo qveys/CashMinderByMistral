@@ -32,14 +32,4 @@ extension TransactionJson on Transaction {
       'category': category,
     };
   }
-
-  static Transaction fromJson(Map<String, dynamic> json) {
-    return Transaction(
-      id: json['id'],
-      date: DateTime.parse(json['date']),
-      amount: json['amount'],
-      description: json['description'],
-      category: json['category'],
-    );
-  }
 }
