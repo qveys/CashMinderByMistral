@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'presentation/screens/home_screen.dart';
 
 void main() {
   runApp(const CashMinderApp());
@@ -14,11 +15,7 @@ class CashMinderApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Scaffold(
-        body: Center(
-          child: Text('Bienvenue sur CashMinder !'),
-        ),
-      ),
+      home: const HomeScreen(),
     );
   }
 }
